@@ -22,6 +22,25 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // If the app bundle fails to load (network, stale cache), show a way out instead of a blank page.
+      (function () {
+        function show() {
+          var root = document.getElementById("root");
+          if (!root || root.childElementCount) return;
+          root.innerHTML =
+            '<div style="max-width:32rem;margin:15vh auto;padding:0 1rem;font-family:system-ui,sans-serif;color:var(--ink,#1c2a33)">' +
+            '<h1 style="font-size:1.6rem;margin:0 0 .5rem">Trang chưa tải được</h1>' +
+            '<p style="margin:0 0 1rem;line-height:1.6">Có thể trang vừa được cập nhật. Tải lại hoàn toàn bằng <b>Ctrl+Shift+R</b> (Mac: <b>Cmd+Shift+R</b>). Tiến độ của bạn vẫn được giữ nguyên.</p>' +
+            '<button onclick="location.reload()" style="font:inherit;font-weight:600;padding:.55rem 1.1rem;border:2px solid #1c2a33;background:#f2a900;cursor:pointer">Tải lại</button></div>';
+        }
+        window.addEventListener("error", function (e) {
+          var t = e.target;
+          if (t && (t.tagName === "SCRIPT" || (t.tagName === "LINK" && t.rel === "modulepreload"))) setTimeout(show, 300);
+        }, true);
+        window.addEventListener("load", function () { setTimeout(show, 4000); });
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
