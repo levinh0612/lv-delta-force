@@ -1427,3 +1427,78 @@ svg.lucide {
 .tier-c {
   background: #b9c3ca;
 }
+
+/* ============ Map list ============ */
+.maplist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--ink);
+  background: var(--panel);
+}
+.maplist li + li {
+  border-top: 1px solid var(--line);
+}
+.maplist a {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.maplist a:hover {
+  background: var(--signal-soft);
+}
+.maplist-n {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--signal);
+  width: 1.5rem;
+  text-align: center;
+}
+.maplist-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.maplist-name {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.maplist-note {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+.maplist-tags {
+  display: flex;
+  gap: 0.3rem;
+}
+.maplist-go {
+  color: var(--muted);
+}
+.maplist a:hover .maplist-go {
+  color: var(--signal);
+}
+@media (max-width: 560px) {
+  .maplist a {
+    grid-template-columns: auto 1fr auto;
+    gap: 0.4rem 0.8rem;
+  }
+  .maplist-tags {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .maplist-go {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+}
