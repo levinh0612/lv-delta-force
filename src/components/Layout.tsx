@@ -8,6 +8,7 @@ const NAV = [
   { to: "/basics", label: "Kiến thức" },
   { to: "/maps", label: "Bản đồ" },
   { to: "/operators", label: "Operator" },
+  { to: "/meta", label: "Meta" },
   { to: "/tips", label: "Tips" },
   { to: "/tools", label: "Công cụ" },
   { to: "/quiz", label: "Quiz" },
