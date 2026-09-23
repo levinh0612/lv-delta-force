@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, CalendarCheck, Map as MapIcon, Shield, Sparkles, Wrench, TrendingUp, PencilRuler, BadgeHelp, type LucideIcon } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarCheck, Map as MapIcon, Shield, Sparkles, Wrench, TrendingUp, BadgeHelp, type LucideIcon } from "lucide-react";
 import { DAYS } from "../data/days";
 import { MODES } from "../data/basics";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
@@ -9,7 +9,6 @@ const TILES: { to: string; ico: LucideIcon; t: string; d: string }[] = [
   { to: "/plan", ico: CalendarCheck, t: "Lộ trình 7 ngày", d: "Mỗi ngày 2–3 tiếng, làm theo thứ tự, đánh dấu từng bước." },
   { to: "/basics", ico: BookOpen, t: "Kiến thức cơ bản", d: "Ba chế độ chơi, quy tắc sống sót, lỗi hay gặp, từ điển thuật ngữ." },
   { to: "/maps", ico: MapIcon, t: "Bản đồ", d: "Bản đồ nào hợp người mới, học gì trước, tránh chỗ nào." },
-  { to: "/maps/editor", ico: PencilRuler, t: "Bản đồ tương tác", d: "Tải ảnh bản đồ, đánh dấu điểm di tản, vẽ lộ trình loot và xuất PNG gửi nhóm." },
   { to: "/meta", ico: TrendingUp, t: "Meta theo mùa", d: "Bảng xếp hạng súng, thay đổi đáng chú ý và súng tân binh nên độ trước." },
   { to: "/operators", ico: Shield, t: "Operator & vai trò", d: "Bốn nhóm vai trò và trắc nghiệm chọn vai hợp với bạn." },
   { to: "/tips", ico: Sparkles, t: "Tips từ cơ bản đến nâng cao", d: "Bắn, di chuyển, âm thanh, kinh tế, đồng đội — lọc theo trình độ." },

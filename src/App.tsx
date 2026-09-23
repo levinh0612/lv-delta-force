@@ -12,7 +12,6 @@ const OperatorsPage = lazy(() => import("./pages/OperatorsPage"));
 const TipsPage = lazy(() => import("./pages/TipsPage"));
 const ToolsPage = lazy(() => import("./pages/ToolsPage"));
 const QuizPage = lazy(() => import("./pages/QuizPage"));
-const MapEditorPage = lazy(() => import("./pages/MapEditorPage"));
 const MetaPage = lazy(() => import("./pages/MetaPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -25,7 +24,6 @@ const router = createBrowserRouter([
       { path: "plan", element: <PlanPage /> },
       { path: "basics", element: <BasicsPage /> },
       { path: "maps", element: <MapsPage /> },
-      { path: "maps/editor", element: <MapEditorPage /> },
       { path: "meta", element: <MetaPage /> },
       { path: "operators", element: <OperatorsPage /> },
       { path: "tips", element: <TipsPage /> },

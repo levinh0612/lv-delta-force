@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ExternalLink, PencilRuler, Sparkles, Zap } from "lucide-react";
+import { ExternalLink, Sparkles, Zap } from "lucide-react";
 import { DIFFICULTY_LABEL, MAP_SOURCE, MAPS } from "../data/maps";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
@@ -24,11 +24,6 @@ export default function MapsPage() {
           Bản đồ<span>Operations</span>
         </h1>
         <p className="lede">Sắp xếp từ dễ tới khó cho người mới. Học xong một bản đồ rồi mới sang bản đồ tiếp theo.</p>
-        <div className="row" style={{ marginTop: "1.25rem" }}>
-          <Link className="btn signal" to="/maps/editor">
-            <PencilRuler size={16} aria-hidden="true" /> Mở bản đồ tương tác
-          </Link>
-        </div>
       </header>
 
       <section className="block">
@@ -95,14 +90,9 @@ export default function MapsPage() {
                   <li key={x}>{x}</li>
                 ))}
               </ul>
-              <div className="row">
-                <a className="btn ghost" href={m.detailUrl} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink size={15} aria-hidden="true" /> Vị trí chi tiết
-                </a>
-                <Link className="btn ghost" to={`/maps/editor?map=${m.id}`}>
-                  <PencilRuler size={15} aria-hidden="true" /> Vẽ lộ trình
-                </Link>
-              </div>
+              <a className="btn ghost" href={m.detailUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink size={15} aria-hidden="true" /> Xem vị trí di tản, loot
+              </a>
             </article>
           ))}
         </div>

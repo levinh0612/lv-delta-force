@@ -12,7 +12,7 @@ summary: Mùa kỷ niệm 2 năm. Operator hỗ trợ mới Rover, hai súng m�
 - **Operator mới — Rover (Hỗ trợ):** đi cùng chó nghiệp vụ Clover, hồi máu đồng đội từ xa. Mở miễn phí qua Season Pass bằng thử thách kỹ năng.
 - **Súng mới:** **MDR** (súng trường tấn công) và **Thompson** (tiểu liên). Mở khóa bằng cách *tìm thấy và mang ra thành công* trong Operations.
 - **Operations:** Layali Grove 2.0 thêm khu mới; Space City có điểm di tản dạng công tắc ngẫu nhiên và tuyến thang máy mới ở Central Garden.
-- **Bản đồ trong trận** (in-match map) giờ mở ở **Operations cấp 4** — tân binh cấp thấp sẽ chưa có, hãy học bản đồ trước ở [trình soạn bản đồ](/maps/editor).
+- **Bản đồ trong trận** (in-match map) giờ mở ở **Operations cấp 4** — tân binh cấp thấp sẽ chưa có, hãy học trước điểm di tản ở [trang Bản đồ](/maps).
 - **Warfare:** bản đồ mới **The Mog** (đánh đường phố Mogadishu, đẩy xe tiếp tế, có trực thăng UH-60 hỗ trợ).
 
 > Mỗi súng được cân bằng **riêng cho từng chế độ**: bản độ ngon ở Warfare chưa chắc hợp Operations, và ngược lại.

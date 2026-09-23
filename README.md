@@ -15,10 +15,6 @@ npm run build    # production build → dist/
 
 Mỗi mùa là một file Markdown trong `content/meta/` (xem `_TEMPLATE.md`). File có `start` mới nhất hiển thị mặc định; bảng xếp hạng có ô `S+`/`S`/`A`/`B`/`C` sẽ tự tô màu. Push lên `main` là Vercel tự deploy.
 
-## Bản đồ tương tác
-
-`/maps/editor` — người chơi tải ảnh chụp bản đồ (lưu IndexedDB trên máy), đặt điểm, vẽ lộ trình, xuất PNG/JSON. Vị trí chi tiết điểm di tản/loot link sang bản đồ cộng đồng của deltaforcemaps.com (TrueMapper).
-
 ## Cấu trúc
 
 ```
